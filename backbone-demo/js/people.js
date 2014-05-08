@@ -11,9 +11,9 @@ var people = new People();
 
 // add models to the People collection
 people.add([
-  {name: 'Dan'},
-  {name: 'Ella'},
-  {name: 'Ava'}
+    {name: 'Dan'},
+    {name: 'Ella'},
+    {name: 'Ava'}
 ]);
 
 // create backbone view
