@@ -1,6 +1,6 @@
 // create backbone collection
 var Locations = Backbone.Collection.extend({
-    url: 'http://166.78.112.120:3000/locations'
+    url: 'http://166.78.112.120:3000/locations' // or your local version
 });
 
 // page view
