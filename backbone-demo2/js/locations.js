@@ -48,8 +48,20 @@ var LocationsView = Backbone.View.extend({
     }
 });
 
-// create an instance of the PageView
-var pageView = new PageView();
+// create router
+var Router = Backbone.Router.extend({
+    routes: {
+        '': 'locations'
+    },
+    
+    locations: function() {
+        // create an instance of the PageView
+        var pageView = new PageView();
+        
+        // render the page view
+        $('#container').html(pageView.render().el);
+    }
+});
 
-// render the page view
-$('#container').html(pageView.render().el);
+var router = new Router();
+Backbone.history.start();
